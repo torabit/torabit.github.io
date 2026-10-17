@@ -1,3 +1,73 @@
 <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>torabit</title>
-<p>torabit</p>
+<meta name="description" content="torabit's portfolio.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="torabit">
+<meta property="og:description" content="torabit's portfolio.">
+<meta property="og:image" content="https://torabit.dev/avatar.jpg">
+<meta property="og:url" content="https://torabit.dev/">
+<link rel="icon" href="/avatar.jpg">
+<style>
+:root {
+  --fg: #111;
+  --bg: #fff;
+  --muted: #595959;
+  --link: #0645ad;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #ddd;
+    --bg: #111;
+    --muted: #a0a0a0;
+    --link: #8ab4f8;
+  }
+}
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.7;
+  color: var(--fg);
+  background: var(--bg);
+  overflow-wrap: anywhere;
+}
+a { color: var(--link); }
+h1 { margin: .5rem 0 0; font-size: 1.5rem; }
+h2 { margin: 2rem 0 .25rem; font-size: 1rem; }
+ul { margin: 0; padding-left: 1.25rem; }
+.avatar { border-radius: 50%; }
+.muted { color: var(--muted); }
+footer { margin-top: 3rem; font-size: .875rem; }
+</style>
+</head>
+<body>
+<header>
+  <img class="avatar" src="/avatar.jpg" width="72" height="72" alt="torabit's avatar">
+  <h1>torabit</h1>
+  <p class="muted">Web frontend engineer.</p>
+</header>
+<main>
+  <h2>Work</h2>
+  <ul>
+    <li>Example Inc. (2022–)</li>
+    <li>Sample Co., Ltd. (2020–2022)</li>
+  </ul>
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="https://github.com/torabit/google-translate-dom-experiments">google-translate-dom-experiments</a>: how Google Translate rewrites the DOM</li>
+  </ul>
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/torabit">GitHub</a></li>
+    <li><a href="https://x.com/torabit">X</a></li>
+  </ul>
+</main>
+<footer class="muted">This site is IPv6 only.</footer>
+</body>
+</html>

@@ -44,6 +44,18 @@ ul { margin: 0; padding-left: 1.25rem; }
 .avatar { border-radius: 50%; }
 .muted { color: var(--muted); }
 footer { margin-top: 3rem; font-size: .875rem; }
+/* On touch devices, scroll body instead of the page so the browser toolbar
+   stays put: a collapsing toolbar hides the avatar when scrolling back up. */
+@media (hover: none) and (pointer: coarse) {
+  html { height: 100%; overflow: hidden; }
+  body {
+    box-sizing: border-box;
+    height: 100%;
+    max-width: none;
+    padding: 3rem max(1rem, calc((100% - 40rem) / 2));
+    overflow-y: auto;
+  }
+}
 </style>
 </head>
 <body>
